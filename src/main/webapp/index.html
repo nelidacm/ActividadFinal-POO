@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gatitos - Registro y adopción</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	<header>
+		<h1>Gatitos - Registro y adopción</h1>
+
+		<nav>
+			<a href="index.html">Inicio</a> <a href="SvGatoListar">Gatos</a> <a
+				href="SvAdoptanteListar">Adoptantes</a>
+		</nav>
+	</header>
+
+	<main>
+		<h2>Bienvenido a Gatitos</h2>
+
+		<p>Este sistema permite registrar gatos y adoptantes, consultar
+			sus datos y gestionar las adopciones.</p>
+		<section class="buscador">
+			<h2>Buscar un gato</h2>
+			<p>Ingresá el nombre del gato que querés encontrar.</p>
+
+			<form action="SvGatoBuscar" method="GET">
+				<input type="text" name="nombre" placeholder="Ejemplo: Michi"
+					required>
+
+				<button type="submit">Buscar</button>
+			</form>
+		</section>
+
+		<h2>¿Qué querés hacer?</h2>
+
+		<div class="opciones">
+			<a class="boton" href="SvGatoListar">Ver gatos</a> <a class="boton"
+				href="SvAdoptanteListar">Ver adoptantes</a>
+		</div>
+	</main>
+
+	<footer> Proyecto Gatitos - Registro y adopción </footer>
+
+</body>
+</html>
