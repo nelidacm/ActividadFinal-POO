@@ -1,0 +1,29 @@
+info:
+  name: Alta Gato
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/actividad-final/SvGatoCrear
+  body:
+    type: form-urlencoded
+    data:
+      - name: edad
+        value: ""
+      - name: raza
+        value: ""
+      - name: sexo
+        value: ""
+      - name: peso
+        value: ""
+      - name: adoptanteId
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

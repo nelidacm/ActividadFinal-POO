@@ -1,0 +1,27 @@
+info:
+  name: Alta Adoptante
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/actividad-final/SvAdoptanteCrear
+  body:
+    type: form-urlencoded
+    data:
+      - name: nombre
+        value: Mateo
+      - name: apellido
+        value: martinez
+      - name: telefono
+        value: "11847523934"
+      - name: correo
+        value: mateo@gmail.com
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

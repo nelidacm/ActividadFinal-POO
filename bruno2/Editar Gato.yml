@@ -1,0 +1,33 @@
+info:
+  name: Editar Gato
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/actividad-final/SvGatoEditar
+  body:
+    type: form-urlencoded
+    data:
+      - name: id
+        value: ""
+      - name: nombre
+        value: ""
+      - name: edad
+        value: ""
+      - name: raza
+        value: ""
+      - name: sexo
+        value: ""
+      - name: peso
+        value: ""
+      - name: adoptanteId
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

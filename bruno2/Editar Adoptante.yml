@@ -1,0 +1,29 @@
+info:
+  name: Editar Adoptante
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8080/actividad-final/SvAdoptanteEditar
+  body:
+    type: form-urlencoded
+    data:
+      - name: id
+        value: ""
+      - name: nombre
+        value: ""
+      - name: apellido
+        value: ""
+      - name: telefono
+        value: ""
+      - name: correo
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
